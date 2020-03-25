@@ -50,6 +50,6 @@ describe 'Dockerfile' do
   end
 
   describe command('cat /usr/share/nginx/html/index.html') do
-    its(:stdout) { should not_contain('Welcome to') }
+    its(:stdout) { should_not contain('Welcome to') }
   end
 end
