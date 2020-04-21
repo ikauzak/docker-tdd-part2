@@ -2,7 +2,7 @@ require 'serverspec'
 require 'docker'
 
 # Setting up docker image
-describe 'Dockerfile' do
+describe 'Docker Image' do
   before(:all) do
     @image = Docker::Image.build_from_dir('.')
     @image.tag(repo: 'ubuntu-teste', tag: 'novo')
